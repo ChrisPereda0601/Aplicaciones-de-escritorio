@@ -1,0 +1,120 @@
+html, body {    /*Para evitar los estilos que nos da el navegador por defecto. */
+    margin: 0;
+    padding:0;
+    font-family: serif;
+}
+
+section {
+    background-color: lightblue;
+    height: 980px;
+    width: 100%;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;  /*Para centrar el elemento aunque crezca la pantalla. */
+}
+
+#div1, h1, h2, h3 {
+    text-align: center;
+}
+
+#div2 {
+    background-color: sienna;
+    height: 800px;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin: 5px;
+}
+#div3 {
+    background-color: rgb(225, 202, 26);
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin: 5px;
+    max-width: 100%;
+}
+#div4 {
+    background-color: rgb(237, 86, 22);
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin: 5px;
+    max-width: 100%;
+}
+#arriba {
+    background-color: rgb(211, 78, 78);
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin: 5px;
+    max-width: 100%;
+}
+
+
+aside {
+    float: right;
+    height: 700px;
+    width: 35%;
+}
+
+img {
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+#bks {
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.container {
+    display:flex;
+}
+
+.container::after { /*Este es el clearfix */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media only screen and (max-width:1070px) {
+    .container {
+        display: block;
+    }
+    body, main, .container{
+        width: auto;
+    }
+    aside{
+        width:auto;
+        float: left;
+        display: flow-root;
+    } 
+    h2, h3 {
+        font-size:18px ;
+    }
+    h4 {
+        font-size: 12px;;
+    }
+    section {
+        background-color: lightblue;
+        height: 795px;
+        width: 100%;
+    }
+    #div2 {
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width:850px) {
+    img {
+        width: 150px;
+        height: 200px;
+    }
+    #div2 {
+        height: 650px;
+    }
+    #bks {
+        width: 150px;
+        height: 100px;
+    }
+}
