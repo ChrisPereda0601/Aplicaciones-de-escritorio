@@ -1,0 +1,16 @@
+@mixin nomargin {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin forma {
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin: 5px;
+}
+
+@mixin telefono {
+    @media screen and (max-width:800px) {
+        @content;
+    }
+}
