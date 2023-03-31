@@ -1,0 +1,29 @@
+header {
+    background-color: #a1c9efe0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#navegacion {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+li {
+    margin: 0 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+a {
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+a:hover {
+    color: #5e5e5e;
+}

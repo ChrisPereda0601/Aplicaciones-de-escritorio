@@ -1,0 +1,39 @@
+img {
+    width: 500px;
+    height: 300px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.c1, .c2, .c3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    background-color: #84a9d4;
+    border-radius: 5px;
+}
+
+h3 {
+    color: #222;
+    font-size: 24px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #ccc;
+    background-color: #71a3dd;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
