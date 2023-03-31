@@ -1,0 +1,159 @@
+@import "variables";
+@import "mixins";
+
+html, body {    /*Para evitar los estilos que nos da el navegador por defecto. */
+    @include nomargin;
+    font-family: serif;
+}
+
+#sec1 {
+    background-color: $color-fondo;
+    height: 980px;
+    width: $ancho-maximo;
+}
+
+#sec2 {
+    background-color: $color-fondo;
+    //height: 980px;
+    width: $ancho-maximo;
+}
+
+#foto-exp {
+    border-radius: 10px;
+    width: 250px;
+    height: 150px;
+    @include telefono {
+        width: 150px;
+        height: 100px;
+    }
+}
+
+#foto-galeria {
+    border-radius: 10px;
+    width: 350px;
+    height: 250px;
+    @include telefono {
+        width: 250px;
+        height: 200px;
+    }
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;  /*Para centrar el elemento aunque crezca la pantalla. */
+}
+
+#div1, h1, h3 {
+    text-align: center;
+}
+
+h2 {
+    font: oblique bold 120% sans-serif;
+    font-size: larger;
+    text-align: center;
+}
+
+#div2 {
+    background-color: lightsalmon;
+    height: 800px;
+    @include forma;
+
+    @include telefono {
+        height: 650px;
+    }
+}
+#div3 {
+    background-color: lightskyblue;
+    @include forma;
+    max-width: $ancho-maximo;
+}
+#div4 {
+    background-color: rgb(116, 165, 237);
+    @include forma;
+    max-width: $ancho-maximo;
+}
+#arriba {
+    background-color: lightsalmon;
+    @include forma;
+    max-width: $ancho-maximo;
+}
+
+
+aside {
+    float: right;
+    height: 650px;
+    width: 35%;
+}
+
+#foto {
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+
+    &-bks {
+        @extend #foto;  //Utilizando extend.
+        width: 250px;
+        height: 150px;
+    }
+
+    @include telefono {
+        width: 150px;
+        height: 200px;
+        &-bks {
+            @extend #foto;  //Utilizando extend.
+            height: 100px;
+        }
+    }
+}
+
+.container {
+    display:flex;
+}
+
+.container::after { /*Este es el clearfix */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+header {
+    background: lightslategrey;
+}
+
+menu a:hover {
+    background: orange;
+}
+
+#p {
+    visibility: hidden;
+}
+
+@media only screen and (max-width:1070px) {
+    .container {
+        display: block;
+    }
+    body, main, .container{
+        width: auto;
+    }
+    aside{
+        width:auto;
+        float: left;
+        display: flow-root;
+    } 
+    h2, h3 {
+        font-size:18px ;
+    }
+    h4 {
+        font-size: 12px;;
+    }
+    #sec1 {
+        background-color: $color-fondo;
+        height: 795px;
+        width: 100%;
+    }
+    #div2 {
+        height: 500px;
+    }
+}

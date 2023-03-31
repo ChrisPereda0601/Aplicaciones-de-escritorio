@@ -1,0 +1,169 @@
+html, body { /*Para evitar los estilos que nos da el navegador por defecto. */
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+}
+
+#sec1 {
+  background-color: lightblue;
+  height: 980px;
+  width: 100%;
+}
+
+#sec2 {
+  background-color: lightblue;
+  width: 100%;
+}
+
+#foto-exp {
+  border-radius: 10px;
+  width: 250px;
+  height: 150px;
+}
+@media screen and (max-width: 800px) {
+  #foto-exp {
+    width: 150px;
+    height: 100px;
+  }
+}
+
+#foto-galeria {
+  border-radius: 10px;
+  width: 350px;
+  height: 250px;
+}
+@media screen and (max-width: 800px) {
+  #foto-galeria {
+    width: 250px;
+    height: 200px;
+  }
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto; /*Para centrar el elemento aunque crezca la pantalla. */
+}
+
+#div1, h1, h3 {
+  text-align: center;
+}
+
+h2 {
+  font: oblique bold 120% sans-serif;
+  font-size: larger;
+  text-align: center;
+}
+
+#div2 {
+  background-color: lightsalmon;
+  height: 800px;
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin: 5px;
+}
+@media screen and (max-width: 800px) {
+  #div2 {
+    height: 650px;
+  }
+}
+
+#div3 {
+  background-color: lightskyblue;
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin: 5px;
+  max-width: 100%;
+}
+
+#div4 {
+  background-color: rgb(116, 165, 237);
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin: 5px;
+  max-width: 100%;
+}
+
+#arriba {
+  background-color: lightsalmon;
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin: 5px;
+  max-width: 100%;
+}
+
+aside {
+  float: right;
+  height: 650px;
+  width: 35%;
+}
+
+#foto, #foto-bks {
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
+}
+#foto-bks {
+  width: 250px;
+  height: 150px;
+}
+@media screen and (max-width: 800px) {
+  #foto, #foto-bks {
+    width: 150px;
+    height: 200px;
+  }
+  #foto-bks {
+    height: 100px;
+  }
+}
+
+.container {
+  display: flex;
+}
+
+.container::after { /*Este es el clearfix */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header {
+  background: lightslategrey;
+}
+
+menu a:hover {
+  background: orange;
+}
+
+#p {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 1070px) {
+  .container {
+    display: block;
+  }
+  body, main, .container {
+    width: auto;
+  }
+  aside {
+    width: auto;
+    float: left;
+    display: flow-root;
+  }
+  h2, h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 12px;
+  }
+  #sec1 {
+    background-color: lightblue;
+    height: 795px;
+    width: 100%;
+  }
+  #div2 {
+    height: 500px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
