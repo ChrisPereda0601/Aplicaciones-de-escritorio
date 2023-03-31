@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /*Cubre toda la altura de la ventana grAfica*/
+}
+
+header, footer{
+    background: orange;
+    margin-top: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.form-control {
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #ccc;
+    width: 40%;
+    height: 25px;
+}
+
+.btn {
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #ccc;
+    background-color: #eab010;
+    width: 65px;
+    height: 30px;
+}
+
+.btn:hover {
+    background-color: rgb(29, 139, 19);
+    border-color: #08650e;
+}
+
+main {
+    min-height: calc(100vh - 189px); /* Establece una altura mínima para el contenido de la página */
+}
+
+.card {
+    float: left;
+    width: 500px;
+    height: 400px;
+    background-color: lightsalmon;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.imagen {
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    border: 2px solid rgb(219, 24, 24);
+    box-shadow: 2px 2px 5px grey;
+    border-radius: 5px;
+}
+
+.card-link {
+    font-size: larger;
+}
