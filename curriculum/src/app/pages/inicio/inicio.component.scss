@@ -1,0 +1,33 @@
+h2 {
+    background-color: rgb(146, 171, 213);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #222;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    background-color: #afcced;
+    border-radius: 5px;
+    display: inline-block;
+  }
+
+img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    margin-left: auto;
+    border: 1px solid #7e7da9;
+    box-shadow: 2px 2px 5px #ccc;
+    border-radius: 5px;
+}
+
+.info {
+    display: flex;
+    align-items:center;
+}
